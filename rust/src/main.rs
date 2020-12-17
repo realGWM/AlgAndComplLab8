@@ -445,7 +445,7 @@ where <T as std::str::FromStr>::Err: std::fmt::Debug
     //P.S.
     //Currently the perfomance is terrible (who could have thought, right?),
     //I see two ways of improving that:
-    //(1) Rewrite the Haskell version to repeteadly read input and output the sorted result for each line,
+    //(1) Rewrite the Haskell version to repeateadly read input and output the sorted result for each line,
     //then spawn a child only once (perhaps in the `prepare_quick_sort_haskell` function) and save is somewhere
     //(this will require either using `unsafe` for a global variable or rewriting this function's signature, 
     //which will make it incompatible with `benchmark` function).
