@@ -13,7 +13,7 @@ const STEP:  usize = 20;            //step for incrementing array size
 
 //Just set this to false if any of this is true:
 //1) You don't have ghc installed.
-//2) The program panics (the ghc doesn't work well. I has to install ghc-static in order to make it work).
+//2) The program panics (the ghc doesn't work well. I had to install ghc-static in order to make it work).
 //3) You are not in the mood for jokes.
 const HASKELL_JOKE_ENABLED: bool = true;
 
