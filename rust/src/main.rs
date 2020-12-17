@@ -443,7 +443,7 @@ where <T as std::str::FromStr>::Err: std::fmt::Debug
     let trimmed = output.trim();
     trimmed.split(" ").zip(0..slice.len()).for_each(|(s, i)| slice[i] = s.parse::<T>().unwrap());
     //P.S.
-    //Currently the perfomance is terrible (who could have though, right?),
+    //Currently the perfomance is terrible (who could have thought, right?),
     //I see two ways of improving that:
     //(1) Rewrite the Haskell version to repeteadly read input and output the sorted result for each line,
     //then spawn a child only once (perhaps in the `prepare_quick_sort_haskell` function) and save is somewhere
